@@ -20,7 +20,7 @@ def load_data(csv_path):
     return df_sorted
 
 try:
-    df = load_data('data.csv')
+    df = load_data('data/data.csv')
 except FileNotFoundError:
     st.error("Error: `data.csv` not found. Please make sure the file is in the same directory.")
     st.stop()
